@@ -1,0 +1,17 @@
+Data Structure : what is data structure.
+a data structure is collection of data organized in some fashion. the structure not only store data, but also
+support operation for accessing and manipulation of data.
+
+Array
+List (Dynamic Array)
+First in First Out FIFO -> QUEUE
+Last in First Out -> Stack
+SET
+Key: Value - example contact list with name and phone number
+List, Set , Queue
+Map
+
+List<Student> list;
+Java Generics: generics only work with Object
+
+Collection: Container
