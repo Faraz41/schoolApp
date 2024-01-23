@@ -12,6 +12,14 @@ List, Set , Queue
 Map
 
 List<Student> list;
-Java Generics: generics only work with Object
-
-Collection: Container
+Java Generics: generics only work with Object.
+In container we keep the object not the primitive data type
+Collection framework
+two type of Container.
+1, collection
+list,
+ set , queue
+2,Map
+Hashmap
+Hashtable
+TreeMarp

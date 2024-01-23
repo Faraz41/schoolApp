@@ -10,7 +10,7 @@ public class ZevarSchoolApp {
 
         do {
             System.out.println("Welcome to Zevar school management App ");
-            System.out.println(" PLease choose from the followin option ");
+            System.out.println(" PLease choose from the following option ");
             System.out.println("1- Add Student ");
             System.out.println("2- View all Student ");
             System.out.println("3- Update a Student ");
@@ -37,7 +37,6 @@ public class ZevarSchoolApp {
                 break;
             case 4 :
                 management.deleteStudent();
-                System.out.println("choose from the list to delete student ");
                 break;
             case 0:
                 System.out.println(" Exit the Application, Bye ");

@@ -20,9 +20,12 @@ public class ZevarManagement implements StudentService {
 
     @Override
     public void readStudents() {
-        for (Student student : studentList) {
+        if (studentList.isEmpty()){
+            System.out.println("No Student in the List");
+            return;
+        }
+        for (Student student : studentList){
             System.out.println(student);
-
         }
 
     }
@@ -58,6 +61,27 @@ public class ZevarManagement implements StudentService {
 
     @Override
     public void deleteStudent() {
+        // Collection FrameWork
+        //Containers
+        if (studentList.isEmpty()){  // this will print if the list is empty.
+            System.out.println("Student List is Empty");
+            return;
+        }
+        readStudents(); // this will bring the list to select the student name to remove
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Select from the StudentList to remove Student");
+
+        String name = scanner.nextLine(); // user will choose the name from the list
+
+        for (Student student : studentList){ // this and below line bring the name from the list while ignoring the Case
+            if (student.getName().equalsIgnoreCase(name)){
+                studentList.remove(student); // remove student from studentList
+                System.out.println("Successfully removed student from the List, Name: "+student.getName());
+                break;
+            }else {
+                System.out.println("No Student Found with name "+name);
+            }
+        }
 
     }
 }
