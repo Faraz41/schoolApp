@@ -24,8 +24,8 @@ public class ZevarManagement implements StudentService {
             System.out.println("No Student in the List");
             return;
         }
-        for (Student student : studentList){
-            System.out.println(student);
+        for (Student s : studentList){
+            System.out.println(s);
         }
 
     }
